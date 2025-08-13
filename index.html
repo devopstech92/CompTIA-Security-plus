@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Security+ SY0-701 Cheat Sheets | devopstech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0a111f, #0d1b2a);
+      font-family: 'Inter', sans-serif;
+      color: #e0e6f0;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #a0d0ff;
+      margin-bottom: 20px;
+    }
+
+    .value-badge {
+      background: #1e293b;
+      color: #38bdf8;
+      padding: 8px 16px;
+      border-radius: 6px;
+      display: inline-block;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .countdown {
+      background: #b91c1c;
+      color: white;
+      padding: 12px;
+      border-radius: 6px;
+      font-weight: 700;
+      margin: 20px 0;
+      font-size: 1.1rem;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin: 50px 0 20px;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
+    .product {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 30px;
+      width: 100%;
+      max-width: 550px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    .product h3 {
+      font-size: 1.6rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .product .subtitle {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    .original-price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ef4444;
+      text-decoration: line-through;
+    }
+
+    .discounted-price {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #10b981;
+      margin: 10px 0;
+    }
+
+    .features {
+      font-size: 0.95rem;
+      margin: 20px 0;
+      color: #d1d5db;
+    }
+
+    .features li {
+      margin-bottom: 6px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      min-width: 130px;
+      font-size: 1rem;
+    }
+
+    .btn-kofi {
+      background: #ff5c5c;
+      color: white;
+    }
+
+    .btn-paypal {
+      background: #003087;
+      color: white;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      transition: all 0.2s;
+    }
+
+    .btn-kofi:hover { background: #e64a4a; }
+    .btn-paypal:hover { background: #002466; }
+
+    .cover-img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      margin: 20px auto;
+      display: block;
+      border: 1px solid #334155;
+    }
+
+    .bundle {
+      background: #1e293b;
+      border: 2px solid #3b82f6;
+      text-align: center;
+      padding: 30px;
+      border-radius: 16px;
+      margin: 70px auto;
+      max-width: 800px;
+      position: relative;
+    }
+
+    .bundle h2 {
+      font-size: 2.4rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .bundle .original-price {
+      font-size: 1.8rem;
+      color: #ef4444;
+    }
+
+    .bundle .discounted-price {
+      font-size: 2.8rem;
+      color: #10b981;
+      font-weight: 800;
+    }
+
+    .cta-text {
+      font-size: 1.2rem;
+      color: #fbbf24;
+      font-weight: 600;
+      margin: 15px 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    .highlight {
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      .product { padding: 20px; }
+      .btn { min-width: 110px; padding: 10px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <div class="value-badge">🛡️ COMP TIA SECURITY+ SY0-701</div>
+      <h1>Ultra-Condensed Cheat Sheets for Fast Exam Success</h1>
+      <p class="tagline">Created by a networking professional. Trusted worldwide.</p>
+    </header>
+
+    <!-- VALUE INTRODUCTION -->
+    <div class="section-title">💡 What These Guides Are Worth</div>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">
+      In the real market, high-quality, exam-focused study tools like these sell for <strong class="highlight">$100+ total</strong>.<br>
+      Why? Because they save <strong>200+ hours of study time</strong>, boost your pass rate, and accelerate your cybersecurity career.<br><br>
+      But today, you’re getting access at a <strong>fraction of the cost</strong>.
+    </p>
+
+    <!-- ORIGINAL PRICES -->
+    <div style="text-align: center; margin: 40px 0; font-size: 1.1rem; color: #ef4444; font-weight: 700;">
+      ❌ Original Market Pricing:
+      <br>• Security+ Survival Kit: <s>$49.99</s>
+      <br>• Ultra-Condensed Pro Guide: <s>$70</s>
+      <br>• Total Value: <s>$117</s>
+    </div>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown">⏰ LIMITED-TIME ACCESS — PRICES WILL INCREASE SOON!</div>
+
+    <!-- DISCOUNTED PRODUCTS -->
+    <div class="section-title">🎁 Your Exclusive Discounted Access</div>
+
+    <div class="products">
+
+      <!-- Product 1: Basic (16 pages) -->
+      <div class="product">
+        <h3>Security+ Survival Kit</h3>
+        <div class="subtitle">16-Page Fast Review Guide</div>
+        <img src="basic.jpg" alt="Survival Kit Cover" class="cover-img">
+        <div class="original-price">$49.99</div>
+        <div class="discounted-price">$12.99</div>
+        <ul class="features">
+          <li>✅ 16 pages of high-yield exam content</li>
+          <li>✅ Threats, Attacks, Vulnerabilities</li>
+          <li>✅ Security Architecture & Zero Trust</li>
+          <li>✅ Cryptography & PKI Quick Reference</li>
+          <li>✅ IAM, MFA, SSO, Federation</li>
+          <li>✅ Cloud, IoT, Mobile Security</li>
+          <li>✅ Top 50 Acronyms & Port Numbers</li>
+          <li>✅ 30 Exam Tips & Mindset Hacks</li>
+          <li>✅ Searchable, Print-Ready PDF</li>
+        </ul>
+        <div class="btn-group">
+          <a href="https://ko-fi.com/s/d33abeccd8" target="_blank" class="btn btn-kofi">Buy on Ko-fi</a>
+          <a href="https://www.paypal.com/ncp/payment/4TG6SYQBFVACA" target="_blank" class="btn btn-paypal">PayPal</a>
+        </div>
+      </div>
+
+      <!-- Product 2: Pro (25 pages) -->
+      <div class="product">
+        <h3>ULTRA-CONDENSED PRO GUIDE</h3>
+        <div class="subtitle">25-Page Professional Edition 2025</div>
+        <img src="pro.jpg" alt="Pro Guide Cover" class="cover-img">
+        <div class="original-price">$70</div>
+        <div class="discounted-price">$29.99</div>
+        <ul class="features">
+          <li>🎯 SAVE 200+ Study Hours</li>
+          <li>✅ Complete SY0-701 Coverage – Zero Fluff</li>
+          <li>✅ All 5 Domains with Exam Weightings</li>
+          <li>✅ Performance-Based Question Prep</li>
+          <li>✅ Critical Commands & Tools Ready-to-Use</li>
+          <li>✅ Real-World Scenarios + Lab Tips</li>
+          <li>🚀 $15K+ Salary Boost Potential</li>
+          <li>✅ DoD 8570 Compliant • Industry Recognized</li>
+          <li>📱 Mobile & Print-Ready • Bookmarked PDF</li>
+        </ul>
+        <div class="btn-group">
+          <a href="https://ko-fi.com/s/1f66da2763" target="_blank" class="btn btn-kofi">Buy on Ko-fi</a>
+          <a href="https://www.paypal.com/ncp/payment/TJ7DB5HMAMGFQ" target="_blank" class="btn btn-paypal">PayPal</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BUNDLE OFFER -->
+    <div class="bundle">
+      <h2> 🎁 FINAL OFFER: GET BOTH & SAVE up to $70 Limited Time Offerings </h2>
+      <div class="original-price">Total Value: $117</div>
+      <div class="discounted-price">$50 ONLY</div>
+      <p class="cta-text">This is your last chance to get both guides at over 50% off!</p>
+      <p>Pass faster. Save time. Own the ultimate Security+ prep toolkit.</p>
+      <div class="btn-group" style="justify-content: center;">
+        <a href="https://ko-fi.com/devopstech" target="_blank" class="btn btn-kofi">Get Bundle on Ko-fi</a>
+        <a href="https://www.paypal.com/ncp/payment/SSD9P35PW5R64" target="_blank" class="btn btn-paypal">PayPal</a>
+      </div>
+    </div>
+
+    <!-- WHY THIS VALUE -->
+    <div class="section-title">🎯 Why This Is Worth Every Penny</div>
+    <p style="text-align: center; max-width: 900px; margin: 0 auto 20px;">
+      This isn't just another PDF. It's a <strong>career accelerator</strong> designed by a real networking pro.<br>
+      You're not just saving time — you're <strong>increasing your odds of passing</strong> and landing that $80K+ job.
+    </p>
+    <ul style="max-width: 700px; margin: 20px auto; font-size: 0.95rem; color: #d1d5db;">
+      <li>✅ <strong>ROI:</strong> $15K+ salary boost vs. $50 investment</li>
+      <li>✅ <strong>Time Saved:</strong> 200+ hours of study condensed</li>
+      <li>✅ <strong>Retake Cost:</strong> One failed exam = $370</li>
+      <li>✅ <strong>Government Jobs:</strong> DoD 8570 compliant = career access</li>
+    </ul>
+
+    <!-- FUTURE RELEASES -->
+    <div class="section-title">🔮 Coming Soon from devopstech</div>
+    <p style="text-align: center; margin-bottom: 20px;">
+      Support now and get early access to:
+    </p>
+    <ul style="text-align: center; font-size: 0.95rem; color: #94a3b8;">
+      <li>🔐 CISSP Ultra-Condensed Guide (Q2 2025)</li>
+      <li>🛡 CEH Practice Labs Collection (Q3 2025)</li>
+      <li>☁ Cloud Security+ (CSS+) Guide (Q4 2025)</li>
+      <li>🎯 CySA+ Analyst Playbook (Early 2026)</li>
+    </ul>
+
+    <footer>
+      <p>Created by devopstech • Trusted by IT Pros Globally </p>
+      <p>Have a question? <a href="mailto:devopstech1992@gmail.com" style="color:#60a5fa;">Email me</a> — I reply fast.</p>
+      <p><small>By purchasing, you acknowledge that you are buying directly from the creator, not Ko-fi. Refunds and support handled by devopstech.</small></p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
